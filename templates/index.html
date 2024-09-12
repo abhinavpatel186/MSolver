@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equation Solver</title>
+</head>
+<body style="background-color: #e0f7fa;">
+    <h1>Quadratic Equation Solver</h1>
+    <form method="POST">
+        
+        <input type="text" id="a" name="a" required size="1">
+        <label for="a">x<sup>2</sup> +</label>
+        <input type="text" id="b" name="b" required size="1">
+        <label for="b">  x  + </label>
+
+        <input type="text" id="c" name="c" required size="1">  = 0
+
+        <br>
+        <br>
+        <br>
+
+
+        <button type="submit">Solve</button>
+    </form>
+    {% if result  %}
+        <h2>Result:</h2>
+        <p>{{ result|safe}}
+            
+        </p>
+
+    {% endif %}
+    
+</body>
+</html>
